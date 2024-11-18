@@ -1,0 +1,122 @@
+:root {
+	--adaptive: calc(1vw + 1vh);
+}
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	scroll-behavior: smooth;
+	/* outline: 5px solid green !important; */
+}
+
+body {
+	min-height: 100vh;
+	background: radial-gradient(
+		circle at -8.9% 51.2%,
+		teal 0%,
+		rgb(11, 99, 56) 15.9%,
+		rgb(6, 48, 28) 15.9%,
+		rgb(6, 72, 40) 24.4%,
+		rgb(19, 30, 37) 24.5%,
+		rgb(19, 30, 37) 66%
+	);
+}
+
+div,
+strong,
+h1 {
+	color: #fff;
+}
+a {
+	text-decoration: none;
+	color: teal;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.App {
+	width: 900px;
+}
+
+.post {
+	display: flex;
+	padding: 15px;
+	border: 2px solid teal;
+	margin: 15px 0;
+	justify-content: space-evenly;
+}
+
+.post__btn {
+	display: flex;
+}
+
+.post-enter {
+	transform: translateX(-350px);
+}
+
+.post-enter-active {
+	transform: translateX(0px);
+	opacity: 1;
+	transition: all 500ms ease-in;
+}
+
+.post-exit {
+	opacity: 1;
+}
+
+.post-exit-active {
+	transform: translateX(-350px);
+	transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+	margin: 30px;
+	display: flex;
+}
+
+.page__button {
+	padding: 10px;
+	border: 1px solid whitesmoke;
+	cursor: pointer;
+}
+
+.page__current {
+	color: teal;
+	border: 4px solid teal;
+	font-weight: bold;
+}
+
+.navbar {
+	background: whitesmoke;
+	height: 50px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+}
+
+.navbar__links {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.navbar__links li {
+	padding: 0 calc(var(--adaptive) * 3);
+}
+
+.navbar__links li a {
+	font-size: calc(var(--adaptive));
+}
