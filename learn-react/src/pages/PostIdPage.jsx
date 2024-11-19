@@ -24,7 +24,7 @@ const PostIdPage = () => {
 	}, [])
 
 	return (
-		<div>
+		<div className='post_soloPage'>
 			<h1>Вы открыли страницу поста с ID {params.id} </h1>
 			{isLoading ? (
 				<Loader />
