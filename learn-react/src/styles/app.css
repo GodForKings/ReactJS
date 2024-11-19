@@ -40,6 +40,7 @@ ul {
 }
 
 #root {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -99,6 +100,7 @@ ul {
 }
 
 .navbar {
+	position: relative;
 	background: whitesmoke;
 	height: 50px;
 	width: 100%;
@@ -119,4 +121,27 @@ ul {
 
 .navbar__links li a {
 	font-size: calc(var(--adaptive));
+}
+
+.post_soloPage {
+	background-image: url(../static/imageFor__posts/bg_img.jpg);
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+
+	padding: 3rem 10rem;
+	animation: bg__animate 30s linear infinite;
+
+	font-size: 1.5rem;
+	overflow: hidden;
+}
+
+@keyframes bg__animate {
+	0% {
+		background-position-x: 100%;
+	}
+	100% {
+		background-position-x: 0%;
+	}
 }
