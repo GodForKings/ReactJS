@@ -22,7 +22,7 @@ const Navbar = () => {
 							localStorage.removeItem('auth')
 						}}
 					>
-						Выйти
+						Out
 					</MyButton>
 				) : (
 					<li>

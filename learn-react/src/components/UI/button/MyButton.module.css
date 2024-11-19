@@ -5,4 +5,11 @@
 	background: transparent;
 	border: 1px solid teal;
 	cursor: pointer;
+	transition: color 0.3s ease;
+	text-transform: uppercase;
+}
+
+.myBtn:hover {
+	background-color: teal;
+	color: white;
 }
